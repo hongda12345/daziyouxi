@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>game</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="index.js"></script>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	body{
+		overflow: hidden;
+		background-image: url('img/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.char{
+		width: 60px;
+		height: 60px;
+		/* background: hotpink; */
+		border-radius: 50%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: center;
+		line-height: 60px;
+		font-size: 0;
+	}
+	.record{
+		width: 100px;
+		height: 100px;
+		/* background: blue; */
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+	.record > div{
+		width: 100px;
+		height: 50px;
+		/* background: red; */
+		line-height: 50px;
+		padding: 0 10px;
+		color: #fff;	
+	}
+	.record > div{
+		width: 100px;
+		height: 50px;
+		/* background: red; */
+		line-height: 50px;
+		color: #fff;
+		padding: 0 10px;	
+	}
+	.record > div{
+		width: 100px;
+		height: 50px;
+		/* background: red; */
+		line-height: 50px;
+		color: #fff;
+		padding: 0 10px;	
+	}
+</style>
+<body>
+	<div class="record">
+		<div>分数：<span class="score">0</span></div>
+		<div>关卡：<span class="floor">1</span></div>
+		<div>生命：<span class="life">10</span></div>
+	</div>
+	<script>
+		let game=new Game();
+		game.start();
+		// confirm('小妹，玩吗？');
+	</script>
+</body>
+</html>
